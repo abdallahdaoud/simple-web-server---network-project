@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wisectionh=device-wisectionh, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="./form.css" >
+    <link rel="shortcut icon" href="./images/favicon.ico"/>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
+	</style>
+</head>
+<body>
+<header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for help us </p>
+</header>
+<form action="mailto:1190515@student.birzeit.edu" method="post" enctype="text/plain" id="survey-form">
+    
+    <label id="name-label">Name:<b> *</b></label><br>
+    <input type="text" id="name" name="name" placeholder="Abdallah Mohammad" required>
+    
+    <label id="gender-label">Gender: </label><br>
+    <div id="radio">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </div>
+
+    <label>Project rating:<b> *</b></label><br>
+    <select id="dropdown" name="rating" required>
+        <option value="good">good</option>
+        <option value="normal" selected>normal</option>
+        <option value="bad">bad</option>
+    </select><br>
+
+    <label id="number-label">The mark from 100: </label><br>
+    <input type="number" id="number" name="number" placeholder="you can estimate" min="0" max="100">    
+    
+    <label>Tick the correct parts: </label><br>
+    <div id="checkbox">
+        <label><input type="checkbox" name="part1" value="nice">Part 1 of the project</label><br>
+        <label><input type="checkbox" name="Part2" value="good">Part 2 of the project</label><br>
+        <label><input type="checkbox" name="Part3" value="very good">Part 3 of the project</label><br>
+    </div>
+
+    <textarea name="feedback" placeholder="Your advice"></textarea>
+
+    <button type="submit" id="submit">Send Mail</button>
+
+</form>
+</body>
+</html>

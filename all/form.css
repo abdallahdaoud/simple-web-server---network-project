@@ -1,0 +1,72 @@
+body, main, main::before, h1, div, figure, img, blockquote, figcaption, span, input, label { margin: 0; padding: 0; }
+body {
+    background-color: #fdf5e6;
+    text-align: center;
+    padding: 2vw;
+    font-family: "Times New Roman", Serif;
+    font-size: 16px;
+}
+header {font-size: 120%;}
+form {
+    font-size: 160%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    display: inline-block;
+    width: 50vw;
+    box-shadow: 0 0 1vw 0 rgba(0,0,0,0.6), 0 0 .3vw 0 rgba(0,0,0,0.6) inset;
+    border-radius: .5em;
+    padding: 4%;
+    text-shadow: .04em .04em .04em #999;
+}
+input::placeholder, textarea::placeholder {opacity: .4;}
+input[type=text], input[type=number], select, textarea, input[type=submit] {
+    background-color: white;
+    box-shadow: 0 0 .2em 0 rgba(0,0,0,0.6) inset;
+    padding: 1.2% 2%;
+    margin: .4% 0 2% 0;
+    border: none;
+    border-radius: .2em;
+    width: 96%;
+    font-size: 1em;
+}
+b {color: orangered;}
+#radio {margin: 0 0 2% 2%;}
+#checkbox {margin: 0 0 2% 2%;}
+input[type=radio]:focus, input[type=checkbox]:focus {box-shadow: none;}
+input:focus, textarea:focus, select:focus {
+    box-shadow: 0 0 .3vw 0 rgba(0, 0, 0, 0.6) inset;
+    outline: none;
+}
+input:focus::placeholder, textarea:focus::placeholder {opacity: 0;}
+textarea {
+    resize: none;
+    height: 4em;
+}
+button {
+    box-shadow: 0 0 .16vw 0 rgba(0,0,0,0.6), 0 0 .1vw 0 rgba(0,0,0,0.6) inset;
+    font-size: 100%;
+    width: 100%;
+    padding: 1vw 0;
+    background-color: white;
+    cursor: pointer;
+    margin-top: .4em;
+    border-radius: 1em;
+    border: none;
+}
+button:focus {
+    box-shadow: 0 0 .4vw 0 rgba(0,0,0,0.6) inset;
+    font-size: 90%;
+    outline: none;
+}
+@media screen and (max-width: 25cm) {
+    header h1 {font-size: 220%;}
+    header p {
+        font-size: 100%;
+        margin-top: .3em;
+    }
+    form {
+        width: 86vw;
+        font-size: 120%;
+    }
+}

@@ -1,0 +1,174 @@
+body, main, main::before, h1, div, figure, img, blockquote, figcaption, span { margin: 0; padding: 0; }
+body {
+    background: linear-gradient(60deg, #7fb3e6, #7fb3e6 50%, #ff8080 50%, #ff8080 100%);
+    padding: 8px;
+}
+.shadow-out {
+    box-shadow: 0 0 .3vmax 0 rgba(0,0,0,0.6), 0 0 .3vmax 0 rgba(0,0,0,0.6) inset;
+}
+.shadow-in {
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.6) inset;
+}
+.center{
+    text-align: center;
+    margin: auto;
+}
+#main {
+    padding: 3vw;
+    background-color: white;
+    opacity: .95;
+}
+main::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    border-top: 6vw solid white;
+    border-left: 6vw solid red;
+    width: 0;
+    box-shadow: 0 0 .3vmax 0 rgba(0,0,0,0.6), 0 0 .3vmax 0 rgba(0,0,0,0.6) inset;
+    animation-name: folds;
+    animation-duration: 3s;
+}
+@keyframes folds {
+    0% { border-width: 0; }
+    33% { border-width: 0; }
+}
+#title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 5vw;
+    color: #ff1a1a;
+    text-shadow: #06c .02em .02em, #06c -.02em .02em, #06c .02em -.02em, #06c -.02em -.02em;
+    margin: 0 0 3vw 0;
+}
+#img-div {
+    width: fit-content;
+    padding: 2vw;
+    border-radius: 1vw;
+}
+#image {
+    max-width: 500px;
+    width: 40vw;
+    height: auto;
+    border-radius: 5vw;
+    display: block;
+    padding: .5vw;
+}
+#img-caption {
+    margin: 1vw auto;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-family: Serif;
+    max-width: 500px;
+    width: 40vw;
+    font-size: 1.2vw;
+}
+blockquote {
+    font-size: 3vw;
+    font-family: arial, Sans-serif;
+    line-height: 1.6;
+    padding: 5% 4% 5% 5%;
+    width: 42vw;
+    border: 1vw dashed #ff8080;
+    border-radius: .5vw;
+}
+.q {
+    font-family: Serif;
+    font-size: 20vw;
+    color: #7fb3e6;
+    position: relative;
+    text-shadow: #000 0 0 .02em;
+    padding: 0 22.1vw;
+    height: 10vw;
+}
+.q1 {
+    text-align: left;
+    bottom: 7vw;
+}
+.q2 {
+    text-align: right;
+    bottom: 9vw;
+}
+em { 
+    padding: 2px; 
+}
+#tribute-info {
+    display: inline;
+}
+.year {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 64px;
+    color: #06c;
+    position: relative;
+    z-index: 1;
+    text-shadow: teal .2vmax .2vmax .2vmax;
+    left: .8vmax;
+    display: block;
+    height: 30px;
+}
+.text {
+    line-height: 24px;
+    text-indent: 130px;
+    font-size: 16px;
+    font-family: 'Pangolin', cursive;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.6), 0 0 2px 0 rgba(0,0,0,0.6) inset;
+    padding: 12px 24px;
+    border: 5px solid;
+    border-image-source: linear-gradient(60deg, #7fb3e6, #7fb3e6 50%, #ff8080 50%, #ff8080 100%);
+    border-image-slice: 1;
+}
+#tribute-link {
+    text-decoration: none;
+    font-size: 1.5vmax;
+    font-family: arial, Sans-serif;
+    font-weight: bold;
+    color: #ff8080;
+    display: inline-block;
+    margin: 1.5vw 0 0 1.5vw;
+    text-shadow: #000 0 0 .15em;
+    background-color: #7fb3e6;
+    border-radius: .5vmax;
+    padding: .4vmax .6vmax;
+}
+#tribute-link:hover {
+    color: #7fb3e6;
+    background-color: #ff8080;
+}
+@media  screen and (max-device-width: 25cm) {
+    body {
+        padding: 14px;
+    }
+    #title {
+        font-size: 12vw;
+        padding: 3vw 10vw;
+    }
+    main::before {
+        border-top-width: 6vmax;
+        border-left-width: 6vmax;
+    }
+    #img-div {
+        padding: 3vw;
+        border-radius: 1.5vw;
+    }
+    #image {
+        width: 60vw;
+        border-radius: 7.5vw;
+        padding: .75vw;
+    }
+    #img-caption {
+        margin: 1.5vw auto;
+        border-radius: 1.5vw;
+        padding: 1.5vw;
+        width:60vw;
+        font-size: 4vw;
+    }
+    blockquote {
+        width: 64vw;
+        font-size: 3.6vw;
+    }
+    .q {
+        padding: 0 10.5vw;
+    }
+    #tribute-link {
+        font-size: 34px;
+    }
+}

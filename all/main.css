@@ -1,0 +1,115 @@
+body, main, main::before, h1, h3, div, figure, img, blockquote, figcaption, span, p, a { margin: 0; padding: 0; }
+body { 
+    background-color: #fef6f3; 
+    font-family: 'Nunito', sans-serif;
+}
+header {
+    padding: 5vh 0 0 0;
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    margin: 0 2vw;
+}
+h2 {
+    font-size: 22px;
+    margin: 2vw min(2vw,2vh);
+    margin-top: 1vw;
+}
+#main {
+    text-align: center;
+    font-family: Nunito;
+}
+#network {
+    height: min(60vh,60vw);
+    margin: auto;
+    margin: min(5vw,5vh) 0 15vw 0;
+}
+#network img { 
+    height: min(60vh,60vw);
+    width: auto;
+    align-self: center;
+    animation-name: zoom;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+@keyframes zoom {
+    0% { height: 0; }
+    20% { height: 0; }
+    100% { height: min(60vh,60vw); }
+}
+figure {
+    background-color: #fef6f3;
+    box-shadow: 0 0 1vw 0 rgba(0,0,0,0.6), 0 0 .3vw 0 rgba(0,0,0,0.6) inset;
+    border: medium solid #edb9a3;
+    border-radius: .5em;
+    padding: 4%;
+    text-shadow: .04em .04em .04em #999;
+}
+figcaption h3 {
+    padding: 0;
+    margin: 1em 0 .1em 0;
+}
+figcaption p {
+    color: #508BE8;
+    display: inline-block;
+}
+figcaption a {
+    /* text-decoration: underline; */
+    color: orange;
+    display: inline-block;
+}
+.here {text-decoration: none;}
+figcaption a:hover, figcaption a:focus {text-shadow: 0 0 .5em;}
+figcaption a:visited {color: #508BE8;}
+.cards img {
+    border: medium solid #edb9a3;
+    box-sizing: border-box;
+    box-shadow: 0 0 .5vw 0 rgba(0,0,0,.4) ;
+}
+.blue {color: #508BE8;}
+.cards {margin-top: min(10vh,10vw);}
+.cards section {
+    width: 60vw;
+    margin: 20px auto;
+    font-family: 'Nunito', sans-serif;
+    z-index: 2;
+}
+.cards p {text-align: center;}
+.cards img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+footer {
+	display: flex;
+	justify-content: center;
+    margin-top: 5vw;
+}
+footer a {
+    border: thick solid #edb9a3;
+	border-radius: 20em ;
+	margin-top: 10em;
+    box-shadow: 0 0 .7vw 0 rgba(0,0,0,0.6);
+    padding: 1em;
+	margin: 1em 3%;
+	color: #222;
+	font-weight: bold;
+}
+footer a:hover {
+    border: thick solid #fef6f3;
+    background-color: #edb9a3;
+}
+
+@media  screen and (max-width: 25cm) {
+    h1 {
+        font-size: 30px;
+        margin-top: min(4vw,4vh);
+    }
+    h2 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .cards section {width: 80vw;}
+    #network {margin: min(10vw,10vh) 0;}
+}

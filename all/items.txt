@@ -1,0 +1,10 @@
+labtop 4000
+smartphone 2000
+earpods 199
+bag 89
+watch 299
+disktop 4200
+keybord 199
+mouse 200
+projecter 1999
+headphone 129
